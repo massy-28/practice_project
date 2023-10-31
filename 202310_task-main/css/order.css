@@ -56,6 +56,8 @@ width: 45%;
 .p-menuInnerBtn:active {
 	opacity: 999;
 	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
 	transition: 1s;
 }
 .p-menuInnerBtn:hover {
@@ -67,9 +69,10 @@ width: 45%;
 	position: absolute;
 	right: 3%;
 	top: 50%;
+	transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
+
 }
 
 /* モーダル本体 */
@@ -96,6 +99,8 @@ width: 45%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
   width: 80%;
 }
 .p-modalContainer::-webkit-scrollbar {
@@ -132,9 +137,13 @@ width: 45%;
 }
 .p-modalContainerInnerClose:before {
   transform: translate(-50%, -50%) rotate(45deg);
+	-webkit-transform:translate(-50%, -50%) rotate(45deg);
+	-ms-transform:translate(-50%, -50%) rotate(45deg);
 }
 .p-modalContainerInnerClose:after {
   transform: translate(-50%, -50%) rotate(-45deg);
+	-webkit-transform:translate(-50%, -50%) rotate(45deg);
+	-ms-transform:translate(-50%, -50%) rotate(45deg);
 }
 
 /* モーダル内のコンテンツ */
@@ -228,11 +237,15 @@ width: 45%;
 	left: -8%;
 	top: 5%;
 	transform: rotate(-25deg);
+	-webkit-transform:rotate(-25deg);
+	-ms-transform:rotate(-25deg);
 }
 .p-orderDetilContents:nth-child(even) >.p-orderDetilContentsInner > .p-orderDetilContentsInnerSticker {
 	left: 53%;
 	top: 5%;
 	transform: rotate(25deg);
+	-webkit-transform:rotate(25deg);
+	-ms-transform:rotate(25deg);
 }
 .p-orderDetilContentsInnerStickerTitle {
 	overflow: hidden;
@@ -255,13 +268,19 @@ width: 45%;
 	}
 .moveLeft {
 	transform: translateX(calc(-50vw - 50%));
+	-webkit-transform:translateX(calc(-50vw - 50%));
+	-ms-transform: translateX(calc(-50vw - 50%));
 }
 .moveRight {
 	transform: translateX(calc(50vw - 50%));
+	-webkit-transform:translateX(calc(50vw - 50%));
+	-ms-transform:translateX(calc(50vw - 50%));
 }
 .sride {
 	animation: animeTape 2s ease 0s 1 normal forwards;
 	transform: translateX(0);
+	-webkit-transform:translateX(0);
+	-ms-transform:translateX(0);
 }
 
 
@@ -276,13 +295,19 @@ width: 45%;
 }
 .Left {
 	transform: translateX(calc(-50vw - 50%));
+	-webkit-transform:translateX(calc(-50vw - 50%));
+	-ms-transform:translateX(calc(-50vw - 50%));
 }
 .Right {
 	transform: translateX(calc(50vw + 50%));
+	-webkit-transform:translateX(calc(50vw + 50%));
+	-ms-transform:translateX(calc(50vw + 50%));
 }
 /*　スライド　jQuery用*/
 .show {
   transform: translateX(0);
+	-webkit-transform:translateX(0);
+	-ms-transform:translateX(0);
 }
 
 /*　下部文字　*/
@@ -409,9 +434,9 @@ width: 45%;
 		position: absolute;
 		right: 3%;
 		top: 50%;
+		transform: translate(0, -50%);
 		-webkit-transform: translate(0, -50%);
 		-ms-transform: translate(0, -50%);
-		transform: translate(0, -50%);
 	}
 	.p-modalContainer {
 		height: 60%;
