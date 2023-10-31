@@ -3,8 +3,8 @@
 }
 /* 画面全体 */
 .l-menu {
-	margin: 0 8vw;
 	font-size: 2vw;
+	margin: 0 8vw;
 }
 /*　メニュー全体　*/
 .p-menu {
@@ -12,8 +12,8 @@
 }
 /* メニュータイトル */
 .p-menuTitle {
-	text-align: center;
 	margin-top: 3vw;
+	text-align: center;
 }
 .p-menuTitleCapital {
 	font-size: 8vw;
@@ -25,33 +25,33 @@
   margin: 8vw 0;
 }
 .p-inner {
-  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* モーダルを開くボタン */
 .p-menuInner {
+	column-gap: 10%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	height: 60vw;
-	column-gap: 10%;
+	justify-content: center;
 }
 .p-menuInnerBtn {
-cursor: pointer;
-display: flex;
-width: 45%;
-height: 8vw;
-margin-bottom: 4vw;
-background-color: #f5ebe0;
 align-items: center;
-justify-content: center;
-position: relative;
-transition: 0.7s ;
-animation-name:fadeUpAnime;
 animation-duration:2.5s;
 animation-fill-mode:forwards;
+animation-name:fadeUpAnime;
+background-color: #f5ebe0;
+cursor: pointer;
+display: flex;
+height: 8vw;
+justify-content: center;
+margin-bottom: 4vw;
+position: relative;
+transition: 0.7s ;
+width: 45%;
 }
 .p-menuInnerBtn:active {
 	opacity: 999;
@@ -67,69 +67,68 @@ animation-fill-mode:forwards;
 	position: absolute;
 	right: 3%;
 	top: 50%;
-	transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
 
 /* モーダル本体 */
 .p-modalWrapper {
   display: none;
+  height: 100%;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 10;
   width: 100%;
-  height: 100%;
+  z-index: 10;
 }
 .p-modalLayer {
-  height: 100%;
   background: rgba(50, 50, 50, .85);
   cursor: pointer;
+  height: 100%;
 }
 .p-modalContainer {
+  background: #edede9;
+  height: 60%;
+  left: 50%;
+	overflow: hidden scroll ;
+  padding: 4vw;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: 80%;
-  padding: 20px;
-  background: #edede9;
-	overflow: hidden scroll ;
+  width: 80%;
 }
 .p-modalContainer::-webkit-scrollbar {
   display: none;
 }
 .p-modalContainerInner {
+  height: 80%;
   position: relative;
-  height: 100%;
 }
 
 /* モーダルを閉じるボタン */
 .p-modalContainerInnerClose {
-  position: absolute;
-  top: -2%;
-  right: -4%;
-  width: 4vw;
-  height: 4vw;
   background: #fff;
-  cursor: pointer;
-  transition: opacity .6s;
 	border-radius: 50%;
+  cursor: pointer;
+  height: 4vw;
+  position: absolute;
+  right: 0;
+  transition: opacity .6s;
+  width: 4vw;
 }
 .p-modalContainerInnerClose:hover {
   opacity: .6;
 }
 .p-modalContainerInnerClose:before,
 .p-modalContainerInnerClose:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 3vw;
-  height: 1px;
   background: #000;
   content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 3vw;
 }
 .p-modalContainerInnerClose:before {
   transform: translate(-50%, -50%) rotate(45deg);
@@ -143,22 +142,22 @@ animation-fill-mode:forwards;
 	padding: 15% 10%;
 }
 .p-containerModalContentBoxImg {
-	margin-bottom: 11vw;
-	width: 100%;
 	height: 100%;
+	margin-bottom: 9vw;
 	object-fit: cover;
+	width: 100%;
 }
-#Futo .p-menuDetailContentPopupInnerText {
+
+.p-menuDetailContentPopupInnerTextwrapper {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction:column;
-	height: 86px;
 }
-#Futo .p-menuDetailContentPopupInnerTextItem {
+#Futo .p-menuDetailContentPopupInnerTextLeft {
 	width: 50%;
-	text-align: center;
-	justify-content: center;
 }
+#Futo .p-menuDetailContentPopupInnerTextRight {
+	width: 50%;
+}
+
 .p-menuDetailContentPopupInnerTextItem {
 	text-align: center;
 }
@@ -166,8 +165,8 @@ animation-fill-mode:forwards;
 
 /*オーダータイトル*/
 .p-orderTitle {
-	text-align: center;
 	margin-top: 3vw;
+	text-align: center;
 }
 .p-orderTitleCapital {
 	font-size: 8vw;
@@ -176,16 +175,16 @@ animation-fill-mode:forwards;
 	font-size: 2vw;
 }
 .p-orderText {
-	margin-top: 6vw ;
 	margin-bottom: 15vw;
+	margin-top: 6vw ;
 }
 .p-orderTextInner {
-	text-align: center;
 	font-size: 3vw;
+	text-align: center;
 }
 .p-orderDetil {
-	position: relative;
 	height: 130vw;
+	position: relative;
 }
 .p-orderDetilContents {
 	display: flex;
@@ -195,26 +194,26 @@ animation-fill-mode:forwards;
 	top: 0vw;
 }
 .p-orderDetilContents:nth-child(2) {
-	top: 25vw;
 	justify-content: flex-end;
+	top: 25vw;
 }
 .p-orderDetilContents:nth-child(3) {
 	top: 50vw;
 }
 .p-orderDetilContents:nth-child(4) {
-	top: 75vw;
 	justify-content: flex-end;
+	top: 75vw;
 }
 .p-orderDetilContents:nth-child(5) {
 	top: 100vw;
 }
 .p-orderDetilContents:nth-child(6) {
-	top: 125vw;
 	justify-content: flex-end;
+	top: 125vw;
 }
 .p-orderDetilContentsInner {
-	width: 46%;
 	position: relative;
+	width: 46%;
 }
 
 /* STEPテープ */
@@ -226,20 +225,20 @@ animation-fill-mode:forwards;
 	z-index: 1;
 }
 .p-orderDetilContents:nth-child(odd) >.p-orderDetilContentsInner > .p-orderDetilContentsInnerSticker {
-	top: 5%;
 	left: -8%;
+	top: 5%;
 	transform: rotate(-25deg);
 }
 .p-orderDetilContents:nth-child(even) >.p-orderDetilContentsInner > .p-orderDetilContentsInnerSticker {
-	top: 5%;
 	left: 53%;
+	top: 5%;
 	transform: rotate(25deg);
 }
 .p-orderDetilContentsInnerStickerTitle {
+	overflow: hidden;
+	padding: 3% 0;
 	text-align: center;
 	width: 100%;
-	padding: 3% 0;
-	overflow: hidden;
 }
 .p-orderDetilContents:nth-child(odd) >.p-orderDetilContentsInner >.p-orderDetilContentsInnerSticker >.p-orderDetilContentsInnerStickerTitle {
 	margin-right: 0;
@@ -248,13 +247,12 @@ animation-fill-mode:forwards;
 	margin-left: 0;
 }
 .p-orderDetilContentsInnerStickerTitleText {
-	padding: 1.5vw 0;
 	background-color: rgba(214, 204, 194, 0.75); /*　#edede9を透明化したもの　*/
-	border-left: 2px dotted rgba(0,0,0,.1); 
-	border-right: 2px dotted rgba(0,0,0,.1);
+	border-left: 2px dotted rgba(0,0,0,.1);  border-right: 2px dotted rgba(0,0,0,.1);
 	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	padding: 1.5vw 0;
 	width: 100%;
-}
+	}
 .moveLeft {
 	transform: translateX(calc(-50vw - 50%));
 }
@@ -262,19 +260,19 @@ animation-fill-mode:forwards;
 	transform: translateX(calc(50vw - 50%));
 }
 .sride {
-	transform: translateX(0);
 	animation: animeTape 2s ease 0s 1 normal forwards;
+	transform: translateX(0);
 }
 
 
 /* スライド写真 */
 .p-orderDetilContentsInnerImg {
-	position: relative;
 	overflow: hidden;
+	position: relative;
 }
 .p-orderDetilContentsInnerImgPhoto {
-	width: 100%;
 	transition: 2s cubic-bezier(0.75, 0, 0.25, 1);
+	width: 100%;
 }
 .Left {
 	transform: translateX(calc(-50vw - 50%));
@@ -308,7 +306,7 @@ animation-fill-mode:forwards;
 	box-shadow: rgba(0, 0, 0, 0.2) 1.95px 1.95px 2.6px;
 	padding: 5vw 8vw;
 	text-align: center;
-	width: 35%;
+	width: 37%;
 }
 .p-orderbtntext:hover {
 	background-color: #d5bdaf;
@@ -345,13 +343,13 @@ animation-fill-mode:forwards;
 @media screen and (max-width: 1024px) {
 	/* タブレット画面スタイル */
 	.p-orderDetil {
-		position: relative;
 		height: 140vw;
+		position: relative;
 	}
 
 	.p-orderDetilContents {
-		position: absolute;
 		display: flex;
+		position: absolute;
 	}
 
 	.p-orderDetilContents:nth-child(1) {
@@ -359,8 +357,8 @@ animation-fill-mode:forwards;
 	}
 
 	.p-orderDetilContents:nth-child(2) {
-		top: 25vw;
 		justify-content: flex-end;
+		top: 25vw;
 	}
 
 	.p-orderDetilContents:nth-child(3) {
@@ -368,8 +366,8 @@ animation-fill-mode:forwards;
 	}
 
 	.p-orderDetilContents:nth-child(4) {
-		top: 75vw;
 		justify-content: flex-end;
+		top: 75vw;
 	}
 
 	.p-orderDetilContents:nth-child(5) {
@@ -377,13 +375,13 @@ animation-fill-mode:forwards;
 	}
 
 	.p-orderDetilContents:nth-child(6) {
-		top: 125vw;
 		justify-content: flex-end;
+		top: 125vw;
 	}
 
 	.p-orderDetilContentsInner {
-		width: 46%;
 		position: relative;
+		width: 46%;
 	}
 }
 
@@ -398,39 +396,39 @@ animation-fill-mode:forwards;
 		margin: 20vw 0;
 	}
 	.p-menuInner {
-		row-gap: 3vw;
 		height: 120vw;
+		row-gap: 3vw;
 	}
 	.p-menuInnerBtn {
-		width: 100%;
 		height: 10vw;
 		margin: 0 0;
+		width: 100%;
 	}
 	.p-menuInnerBtn::after {
 		content: "+";
 		position: absolute;
 		right: 3%;
 		top: 50%;
-		transform: translate(0, -50%);
 		-webkit-transform: translate(0, -50%);
 		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
 	}
 	.p-modalContainer {
-		height: 40%;
+		height: 60%;
 		width: 80%;
 	}
 	.p-order {
 		margin: 15vw 0;
 	}
 	.p-orderDetil {
-		position: static;
 		height: fit-content;
+		position: static;
 	}
 	.p-orderDetilContents {
-		position: static;
 		display: flex;
-		width: 100%;
 		margin-right: 0vw;
+		position: static;
+		width: 100%;
 	}
 	.p-orderDetilContents:nth-child(odd) {
 		justify-content: flex-end;
@@ -472,8 +470,8 @@ animation-fill-mode:forwards;
 		text-align: center;
 	}
 	.p-orderbtn {
-		margin-bottom: 20vw;
 		justify-content: center;
+		margin-bottom: 20vw;
 	}
 
 	.p-orderbtntext {

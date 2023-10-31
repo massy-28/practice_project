@@ -51,18 +51,21 @@
                   <!-- 封筒のコンテンツ -->
                   <div id="Futo" class="p-modalContainerInnerContent">
                     <img class="p-containerModalContentBoxImg" src="image/popup-fūtō.jpg" alt="封筒画像">
-                    <ul class="p-menuDetailContentPopupInnerText">
-                      <li class="p-menuDetailContentPopupInnerTextItem">長３封筒</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">長３封筒（窓あり）</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">長４封筒</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">角２封筒</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">&nbsp;</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">クラフト紙</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">カラー紙 全般</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">スミ１色</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">カラー１色</li>
-                      <li class="p-menuDetailContentPopupInnerTextItem">カラー４色</li>
-                    </ul>
+                      <div class="p-menuDetailContentPopupInnerTextwrapper">
+                        <ul class="p-menuDetailContentPopupInnerTextLeft">
+                          <li class="p-menuDetailContentPopupInnerTextItem">長３封筒</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">長３封筒（窓あり）</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">長４封筒</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">角２封筒</li>
+                        </ul>
+                        <ul class="p-menuDetailContentPopupInnerTextRight">
+                          <li class="p-menuDetailContentPopupInnerTextItem">クラフト紙</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">カラー紙 全般</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">スミ１色</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">カラー１色</li>
+                          <li class="p-menuDetailContentPopupInnerTextItem">カラー４色</li>
+                        </ul>
+                      </div>
                   </div>
                 </div>
               </div>
